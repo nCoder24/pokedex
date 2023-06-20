@@ -22,7 +22,9 @@ ${data
   .map(([id, name, types, speed, hp, xp, attack, defense, weight], index) => {
     let cardDetails = [];
     cardDetails.push(`<div class="pokemon-card">`);
-    cardDetails.push(`<div class="pokemon-image"></div>`);
+    cardDetails.push(`<div class="pokemon-image">
+    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${(index+1).toString().padStart(3, "0")}.png">
+    </div>`);
     cardDetails.push(`<p class="pokemon-name">${name}</p>`);
     cardDetails.push(`<table class="pokemon-details">`);
     cardDetails.push(`<tr class="pokemon-property">`);

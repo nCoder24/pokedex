@@ -11,8 +11,13 @@
         margin: 2em auto;
       }
 
-      .pokedex-headline {
+      #heading {
         text-align: center;
+      }
+
+      #pokedox-logo {
+        width: 50%;
+        margin-bottom: 2em;
       }
 
       .pokedex {
@@ -32,11 +37,15 @@
         background-color: #a4d4e3;
         border-radius: 2%;
       }
-      
+
+      .pokemon-card:hover {
+        cursor: pointer;
+      }
+
       .pokemon-image {
         background-color: #d2e9f0;
-        width: 9em;
-        height: 9em;
+        width: 98%;
+        aspect-ratio: 1;
         margin: 0em auto;
         border-radius: 2%;
       }
@@ -51,11 +60,16 @@
         font-size: 0.65em;
         width: 95%;
         margin: 0 auto;
+        border-collapse: collapse;
       }
 
       .pokemon-property-value {
         color: #4b4b4b;
         text-align: right;
+      }
+
+      .pokemon-property > td {
+        padding: 0.2em;
       }
 
       span {
@@ -141,12 +155,16 @@
   <body>
     <main class="page">
       <section id="heading">
-        <h1 class="pokedex-headline">Pokédex</h1>
+        <img src="img/pokedex-logo.png" alt="pokedox-logo" id="pokedox-logo" />
       </section>
       <section class="pokedex">
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
+              />
+            </div>
             <p class="pokemon-name">Bulbasaur</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -179,7 +197,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png"
+              />
+            </div>
             <p class="pokemon-name">Ivysaur</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -212,7 +234,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png"
+              />
+            </div>
             <p class="pokemon-name">Venusaur</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -245,7 +271,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png"
+              />
+            </div>
             <p class="pokemon-name">Charmander</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -279,7 +309,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png"
+              />
+            </div>
             <p class="pokemon-name">Charmeleon</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -311,7 +345,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png"
+              />
+            </div>
             <p class="pokemon-name">Charizard</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -344,7 +382,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png"
+              />
+            </div>
             <p class="pokemon-name">Squirtle</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -376,7 +418,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png"
+              />
+            </div>
             <p class="pokemon-name">Wartortle</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -410,7 +456,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png"
+              />
+            </div>
             <p class="pokemon-name">Blastoise</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -442,7 +492,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png"
+              />
+            </div>
             <p class="pokemon-name">Caterpie</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -474,7 +528,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/011.png"
+              />
+            </div>
             <p class="pokemon-name">Metapod</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -506,7 +564,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png"
+              />
+            </div>
             <p class="pokemon-name">Butterfree</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -540,7 +602,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png"
+              />
+            </div>
             <p class="pokemon-name">Weedle</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -572,7 +638,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/014.png"
+              />
+            </div>
             <p class="pokemon-name">Kakuna</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -604,7 +674,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/015.png"
+              />
+            </div>
             <p class="pokemon-name">Beedrill</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -636,7 +710,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png"
+              />
+            </div>
             <p class="pokemon-name">Pidgey</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -671,7 +749,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/017.png"
+              />
+            </div>
             <p class="pokemon-name">Pidgeotto</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -704,7 +786,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/018.png"
+              />
+            </div>
             <p class="pokemon-name">Pidgeot</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -737,7 +823,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png"
+              />
+            </div>
             <p class="pokemon-name">Rattata</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -769,7 +859,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/020.png"
+              />
+            </div>
             <p class="pokemon-name">Raticate</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -803,7 +897,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/021.png"
+              />
+            </div>
             <p class="pokemon-name">Spearow</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -836,7 +934,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/022.png"
+              />
+            </div>
             <p class="pokemon-name">Fearow</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -869,7 +971,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png"
+              />
+            </div>
             <p class="pokemon-name">Ekans</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -901,7 +1007,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/024.png"
+              />
+            </div>
             <p class="pokemon-name">Arbok</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -935,7 +1045,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png"
+              />
+            </div>
             <p class="pokemon-name">Pikachu</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -967,7 +1081,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/026.png"
+              />
+            </div>
             <p class="pokemon-name">Raichu</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -999,7 +1117,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/027.png"
+              />
+            </div>
             <p class="pokemon-name">Sandshrew</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1031,7 +1153,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/028.png"
+              />
+            </div>
             <p class="pokemon-name">Sandslash</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1065,7 +1191,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/029.png"
+              />
+            </div>
             <p class="pokemon-name">Nidoran-f</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1097,7 +1227,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/030.png"
+              />
+            </div>
             <p class="pokemon-name">Nidorina</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1129,7 +1263,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/031.png"
+              />
+            </div>
             <p class="pokemon-name">Nidoqueen</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1162,7 +1300,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/032.png"
+              />
+            </div>
             <p class="pokemon-name">Nidoran-m</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1196,7 +1338,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/033.png"
+              />
+            </div>
             <p class="pokemon-name">Nidorino</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1228,7 +1374,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/034.png"
+              />
+            </div>
             <p class="pokemon-name">Nidoking</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1261,7 +1411,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/035.png"
+              />
+            </div>
             <p class="pokemon-name">Clefairy</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1293,7 +1447,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/036.png"
+              />
+            </div>
             <p class="pokemon-name">Clefable</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1327,7 +1485,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png"
+              />
+            </div>
             <p class="pokemon-name">Vulpix</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1359,7 +1521,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/038.png"
+              />
+            </div>
             <p class="pokemon-name">Ninetales</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1391,7 +1557,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/039.png"
+              />
+            </div>
             <p class="pokemon-name">Jigglypuff</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1424,7 +1594,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/040.png"
+              />
+            </div>
             <p class="pokemon-name">Wigglytuff</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1459,7 +1633,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/041.png"
+              />
+            </div>
             <p class="pokemon-name">Zubat</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1492,7 +1670,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/042.png"
+              />
+            </div>
             <p class="pokemon-name">Golbat</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1525,7 +1707,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/043.png"
+              />
+            </div>
             <p class="pokemon-name">Oddish</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1558,7 +1744,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/044.png"
+              />
+            </div>
             <p class="pokemon-name">Gloom</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1593,7 +1783,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/045.png"
+              />
+            </div>
             <p class="pokemon-name">Vileplume</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1626,7 +1820,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/046.png"
+              />
+            </div>
             <p class="pokemon-name">Paras</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1658,7 +1856,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/047.png"
+              />
+            </div>
             <p class="pokemon-name">Parasect</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1690,7 +1892,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/048.png"
+              />
+            </div>
             <p class="pokemon-name">Venonat</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1724,7 +1930,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/049.png"
+              />
+            </div>
             <p class="pokemon-name">Venomoth</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1756,7 +1966,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/050.png"
+              />
+            </div>
             <p class="pokemon-name">Diglett</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1788,7 +2002,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/051.png"
+              />
+            </div>
             <p class="pokemon-name">Dugtrio</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1820,7 +2038,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/052.png"
+              />
+            </div>
             <p class="pokemon-name">Meowth</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1854,7 +2076,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/053.png"
+              />
+            </div>
             <p class="pokemon-name">Persian</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1886,7 +2112,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/054.png"
+              />
+            </div>
             <p class="pokemon-name">Psyduck</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1918,7 +2148,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/055.png"
+              />
+            </div>
             <p class="pokemon-name">Golduck</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1950,7 +2184,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/056.png"
+              />
+            </div>
             <p class="pokemon-name">Mankey</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -1984,7 +2222,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/057.png"
+              />
+            </div>
             <p class="pokemon-name">Primeape</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2016,7 +2258,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/058.png"
+              />
+            </div>
             <p class="pokemon-name">Growlithe</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2048,7 +2294,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/059.png"
+              />
+            </div>
             <p class="pokemon-name">Arcanine</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2080,7 +2330,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/060.png"
+              />
+            </div>
             <p class="pokemon-name">Poliwag</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2114,7 +2368,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/061.png"
+              />
+            </div>
             <p class="pokemon-name">Poliwhirl</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2146,7 +2404,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/062.png"
+              />
+            </div>
             <p class="pokemon-name">Poliwrath</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2179,7 +2441,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/063.png"
+              />
+            </div>
             <p class="pokemon-name">Abra</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2211,7 +2477,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/064.png"
+              />
+            </div>
             <p class="pokemon-name">Kadabra</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2245,7 +2515,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/065.png"
+              />
+            </div>
             <p class="pokemon-name">Alakazam</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2277,7 +2551,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/066.png"
+              />
+            </div>
             <p class="pokemon-name">Machop</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2309,7 +2587,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/067.png"
+              />
+            </div>
             <p class="pokemon-name">Machoke</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2341,7 +2623,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/068.png"
+              />
+            </div>
             <p class="pokemon-name">Machamp</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2375,7 +2661,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/069.png"
+              />
+            </div>
             <p class="pokemon-name">Bellsprout</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2408,7 +2698,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/070.png"
+              />
+            </div>
             <p class="pokemon-name">Weepinbell</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2441,7 +2735,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/071.png"
+              />
+            </div>
             <p class="pokemon-name">Victreebel</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2474,7 +2772,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/072.png"
+              />
+            </div>
             <p class="pokemon-name">Tentacool</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2509,7 +2811,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/073.png"
+              />
+            </div>
             <p class="pokemon-name">Tentacruel</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2542,7 +2848,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/074.png"
+              />
+            </div>
             <p class="pokemon-name">Geodude</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2575,7 +2885,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/075.png"
+              />
+            </div>
             <p class="pokemon-name">Graveler</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2608,7 +2922,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/076.png"
+              />
+            </div>
             <p class="pokemon-name">Golem</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2643,7 +2961,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/077.png"
+              />
+            </div>
             <p class="pokemon-name">Ponyta</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2675,7 +2997,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/078.png"
+              />
+            </div>
             <p class="pokemon-name">Rapidash</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2707,7 +3033,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/079.png"
+              />
+            </div>
             <p class="pokemon-name">Slowpoke</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2740,7 +3070,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/080.png"
+              />
+            </div>
             <p class="pokemon-name">Slowbro</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2775,7 +3109,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/081.png"
+              />
+            </div>
             <p class="pokemon-name">Magnemite</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2808,7 +3146,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/082.png"
+              />
+            </div>
             <p class="pokemon-name">Magneton</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2841,7 +3183,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/083.png"
+              />
+            </div>
             <p class="pokemon-name">Farfetchd</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2874,7 +3220,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/084.png"
+              />
+            </div>
             <p class="pokemon-name">Doduo</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2909,7 +3259,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/085.png"
+              />
+            </div>
             <p class="pokemon-name">Dodrio</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2942,7 +3296,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/086.png"
+              />
+            </div>
             <p class="pokemon-name">Seel</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -2974,7 +3332,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/087.png"
+              />
+            </div>
             <p class="pokemon-name">Dewgong</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3006,7 +3368,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/088.png"
+              />
+            </div>
             <p class="pokemon-name">Grimer</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3040,7 +3406,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/089.png"
+              />
+            </div>
             <p class="pokemon-name">Muk</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3072,7 +3442,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/090.png"
+              />
+            </div>
             <p class="pokemon-name">Shellder</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3104,7 +3478,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/091.png"
+              />
+            </div>
             <p class="pokemon-name">Cloyster</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3136,7 +3514,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/092.png"
+              />
+            </div>
             <p class="pokemon-name">Gastly</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3171,7 +3553,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/093.png"
+              />
+            </div>
             <p class="pokemon-name">Haunter</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3204,7 +3590,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/094.png"
+              />
+            </div>
             <p class="pokemon-name">Gengar</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3237,7 +3627,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/095.png"
+              />
+            </div>
             <p class="pokemon-name">Onix</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3270,7 +3664,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/096.png"
+              />
+            </div>
             <p class="pokemon-name">Drowzee</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3304,7 +3702,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/097.png"
+              />
+            </div>
             <p class="pokemon-name">Hypno</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3336,7 +3738,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/098.png"
+              />
+            </div>
             <p class="pokemon-name">Krabby</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3368,7 +3774,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/099.png"
+              />
+            </div>
             <p class="pokemon-name">Kingler</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3400,7 +3810,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/100.png"
+              />
+            </div>
             <p class="pokemon-name">Voltorb</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3434,7 +3848,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/101.png"
+              />
+            </div>
             <p class="pokemon-name">Electrode</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3466,7 +3884,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/102.png"
+              />
+            </div>
             <p class="pokemon-name">Exeggcute</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3499,7 +3921,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/103.png"
+              />
+            </div>
             <p class="pokemon-name">Exeggutor</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3532,7 +3958,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/104.png"
+              />
+            </div>
             <p class="pokemon-name">Cubone</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3566,7 +3996,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/105.png"
+              />
+            </div>
             <p class="pokemon-name">Marowak</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3598,7 +4032,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/106.png"
+              />
+            </div>
             <p class="pokemon-name">Hitmonlee</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3630,7 +4068,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/107.png"
+              />
+            </div>
             <p class="pokemon-name">Hitmonchan</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3662,7 +4104,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/108.png"
+              />
+            </div>
             <p class="pokemon-name">Lickitung</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3696,7 +4142,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/109.png"
+              />
+            </div>
             <p class="pokemon-name">Koffing</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3728,7 +4178,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/110.png"
+              />
+            </div>
             <p class="pokemon-name">Weezing</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3760,7 +4214,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/111.png"
+              />
+            </div>
             <p class="pokemon-name">Rhyhorn</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3793,7 +4251,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/112.png"
+              />
+            </div>
             <p class="pokemon-name">Rhydon</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3828,7 +4290,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/113.png"
+              />
+            </div>
             <p class="pokemon-name">Chansey</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3860,7 +4326,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/114.png"
+              />
+            </div>
             <p class="pokemon-name">Tangela</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3892,7 +4362,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/115.png"
+              />
+            </div>
             <p class="pokemon-name">Kangaskhan</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3924,7 +4398,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/116.png"
+              />
+            </div>
             <p class="pokemon-name">Horsea</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3958,7 +4436,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/117.png"
+              />
+            </div>
             <p class="pokemon-name">Seadra</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -3990,7 +4472,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/118.png"
+              />
+            </div>
             <p class="pokemon-name">Goldeen</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4022,7 +4508,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/119.png"
+              />
+            </div>
             <p class="pokemon-name">Seaking</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4054,7 +4544,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/120.png"
+              />
+            </div>
             <p class="pokemon-name">Staryu</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4088,7 +4582,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/121.png"
+              />
+            </div>
             <p class="pokemon-name">Starmie</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4121,7 +4619,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/122.png"
+              />
+            </div>
             <p class="pokemon-name">Mr-mime</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4154,7 +4656,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/123.png"
+              />
+            </div>
             <p class="pokemon-name">Scyther</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4186,7 +4692,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/124.png"
+              />
+            </div>
             <p class="pokemon-name">Jynx</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4221,7 +4731,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/125.png"
+              />
+            </div>
             <p class="pokemon-name">Electabuzz</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4253,7 +4767,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/126.png"
+              />
+            </div>
             <p class="pokemon-name">Magmar</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4285,7 +4803,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/127.png"
+              />
+            </div>
             <p class="pokemon-name">Pinsir</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4317,7 +4839,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/128.png"
+              />
+            </div>
             <p class="pokemon-name">Tauros</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4351,7 +4877,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/129.png"
+              />
+            </div>
             <p class="pokemon-name">Magikarp</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4383,7 +4913,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/130.png"
+              />
+            </div>
             <p class="pokemon-name">Gyarados</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4416,7 +4950,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/131.png"
+              />
+            </div>
             <p class="pokemon-name">Lapras</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4448,7 +4986,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/132.png"
+              />
+            </div>
             <p class="pokemon-name">Ditto</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4482,7 +5024,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/133.png"
+              />
+            </div>
             <p class="pokemon-name">Eevee</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4514,7 +5060,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/134.png"
+              />
+            </div>
             <p class="pokemon-name">Vaporeon</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4546,7 +5096,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/135.png"
+              />
+            </div>
             <p class="pokemon-name">Jolteon</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4578,7 +5132,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/136.png"
+              />
+            </div>
             <p class="pokemon-name">Flareon</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4612,7 +5170,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/137.png"
+              />
+            </div>
             <p class="pokemon-name">Porygon</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4644,7 +5206,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/138.png"
+              />
+            </div>
             <p class="pokemon-name">Omanyte</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4676,7 +5242,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/139.png"
+              />
+            </div>
             <p class="pokemon-name">Omastar</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4708,7 +5278,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/140.png"
+              />
+            </div>
             <p class="pokemon-name">Kabuto</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4742,7 +5316,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/141.png"
+              />
+            </div>
             <p class="pokemon-name">Kabutops</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4774,7 +5352,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/142.png"
+              />
+            </div>
             <p class="pokemon-name">Aerodactyl</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4807,7 +5389,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/143.png"
+              />
+            </div>
             <p class="pokemon-name">Snorlax</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4839,7 +5425,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/144.png"
+              />
+            </div>
             <p class="pokemon-name">Articuno</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4873,7 +5463,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/145.png"
+              />
+            </div>
             <p class="pokemon-name">Zapdos</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4906,7 +5500,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/146.png"
+              />
+            </div>
             <p class="pokemon-name">Moltres</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4939,7 +5537,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/147.png"
+              />
+            </div>
             <p class="pokemon-name">Dratini</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -4971,7 +5573,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/148.png"
+              />
+            </div>
             <p class="pokemon-name">Dragonair</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5005,7 +5611,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/149.png"
+              />
+            </div>
             <p class="pokemon-name">Dragonite</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5038,7 +5648,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/150.png"
+              />
+            </div>
             <p class="pokemon-name">Mewtwo</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5070,7 +5684,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/151.png"
+              />
+            </div>
             <p class="pokemon-name">Mew</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5102,7 +5720,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/152.png"
+              />
+            </div>
             <p class="pokemon-name">Chikorita</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5136,7 +5758,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/153.png"
+              />
+            </div>
             <p class="pokemon-name">Bayleef</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5168,7 +5794,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/154.png"
+              />
+            </div>
             <p class="pokemon-name">Meganium</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5200,7 +5830,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/155.png"
+              />
+            </div>
             <p class="pokemon-name">Cyndaquil</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5232,7 +5866,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/156.png"
+              />
+            </div>
             <p class="pokemon-name">Quilava</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5266,7 +5904,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/157.png"
+              />
+            </div>
             <p class="pokemon-name">Typhlosion</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5298,7 +5940,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/158.png"
+              />
+            </div>
             <p class="pokemon-name">Totodile</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5330,7 +5976,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/159.png"
+              />
+            </div>
             <p class="pokemon-name">Croconaw</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5362,7 +6012,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/160.png"
+              />
+            </div>
             <p class="pokemon-name">Feraligatr</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5396,7 +6050,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/161.png"
+              />
+            </div>
             <p class="pokemon-name">Sentret</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5428,7 +6086,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/162.png"
+              />
+            </div>
             <p class="pokemon-name">Furret</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5460,7 +6122,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/163.png"
+              />
+            </div>
             <p class="pokemon-name">Hoothoot</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5493,7 +6159,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/164.png"
+              />
+            </div>
             <p class="pokemon-name">Noctowl</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5528,7 +6198,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/165.png"
+              />
+            </div>
             <p class="pokemon-name">Ledyba</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5560,7 +6234,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/166.png"
+              />
+            </div>
             <p class="pokemon-name">Ledian</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5592,7 +6270,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/167.png"
+              />
+            </div>
             <p class="pokemon-name">Spinarak</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5624,7 +6306,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/168.png"
+              />
+            </div>
             <p class="pokemon-name">Ariados</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5658,7 +6344,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/169.png"
+              />
+            </div>
             <p class="pokemon-name">Crobat</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5691,7 +6381,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/170.png"
+              />
+            </div>
             <p class="pokemon-name">Chinchou</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5724,7 +6418,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/171.png"
+              />
+            </div>
             <p class="pokemon-name">Lanturn</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5757,7 +6455,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/172.png"
+              />
+            </div>
             <p class="pokemon-name">Pichu</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5791,7 +6493,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/173.png"
+              />
+            </div>
             <p class="pokemon-name">Cleffa</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5823,7 +6529,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/174.png"
+              />
+            </div>
             <p class="pokemon-name">Igglybuff</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5856,7 +6566,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/175.png"
+              />
+            </div>
             <p class="pokemon-name">Togepi</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5888,7 +6602,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/176.png"
+              />
+            </div>
             <p class="pokemon-name">Togetic</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5923,7 +6641,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/177.png"
+              />
+            </div>
             <p class="pokemon-name">Natu</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5956,7 +6678,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/178.png"
+              />
+            </div>
             <p class="pokemon-name">Xatu</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -5989,7 +6715,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/179.png"
+              />
+            </div>
             <p class="pokemon-name">Mareep</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6021,7 +6751,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/180.png"
+              />
+            </div>
             <p class="pokemon-name">Flaaffy</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6055,7 +6789,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/181.png"
+              />
+            </div>
             <p class="pokemon-name">Ampharos</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6087,7 +6825,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/182.png"
+              />
+            </div>
             <p class="pokemon-name">Bellossom</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6119,7 +6861,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/183.png"
+              />
+            </div>
             <p class="pokemon-name">Marill</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6152,7 +6898,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/184.png"
+              />
+            </div>
             <p class="pokemon-name">Azumarill</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6187,7 +6937,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/185.png"
+              />
+            </div>
             <p class="pokemon-name">Sudowoodo</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6219,7 +6973,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/186.png"
+              />
+            </div>
             <p class="pokemon-name">Politoed</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6251,7 +7009,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/187.png"
+              />
+            </div>
             <p class="pokemon-name">Hoppip</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6284,7 +7046,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/188.png"
+              />
+            </div>
             <p class="pokemon-name">Skiploom</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6319,7 +7085,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/189.png"
+              />
+            </div>
             <p class="pokemon-name">Jumpluff</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6352,7 +7122,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/190.png"
+              />
+            </div>
             <p class="pokemon-name">Aipom</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6384,7 +7158,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/191.png"
+              />
+            </div>
             <p class="pokemon-name">Sunkern</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6416,7 +7194,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/192.png"
+              />
+            </div>
             <p class="pokemon-name">Sunflora</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6450,7 +7232,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/193.png"
+              />
+            </div>
             <p class="pokemon-name">Yanma</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6482,7 +7268,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/194.png"
+              />
+            </div>
             <p class="pokemon-name">Wooper</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6515,7 +7305,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/195.png"
+              />
+            </div>
             <p class="pokemon-name">Quagsire</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6548,7 +7342,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/196.png"
+              />
+            </div>
             <p class="pokemon-name">Espeon</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6582,7 +7380,11 @@
         </div>
         <div class="pokedex-row">
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/197.png"
+              />
+            </div>
             <p class="pokemon-name">Umbreon</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6614,7 +7416,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/198.png"
+              />
+            </div>
             <p class="pokemon-name">Murkrow</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
@@ -6647,7 +7453,11 @@
             </table>
           </div>
           <div class="pokemon-card">
-            <div class="pokemon-image"></div>
+            <div class="pokemon-image">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/199.png"
+              />
+            </div>
             <p class="pokemon-name">Slowking</p>
             <table class="pokemon-details">
               <tr class="pokemon-property">
