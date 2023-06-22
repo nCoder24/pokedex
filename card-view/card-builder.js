@@ -1,10 +1,10 @@
 const fs = require("fs");
 
 const rawData = fs.readFileSync("./data", "utf-8");
-const data = rawData.split("\n").map((tr) => {
-  const tds = tr.split("|");
-  tds[1] = tds[1][0].toUpperCase() + tds[1].slice(1);
-  tds[2] = tds[2]
+const data = rawData.split("\n").map((div) => {
+  const divs = div.split("|");
+  divs[1] = divs[1][0].toUpperCase() + divs[1].slice(1);
+  divs[2] = divs[2]
     .split(",")
     .map(
       (type) =>
@@ -13,53 +13,52 @@ const data = rawData.split("\n").map((tr) => {
         }</span>`
     )
     .join("");
-  return tds;
+  return divs;
 });
 
-const html = `<section class="pokedex">
-<div class="pokedex-row">
+const html = `
 ${data
   .map(([id, name, types, speed, hp, xp, attack, defense, weight], index) => {
     let cardDetails = [];
     cardDetails.push(`<div class="pokemon-card">`);
-    cardDetails.push(`<div class="pokemon-image">
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${(index+1).toString().padStart(3, "0")}.png">
+    cardDetails.push(`<div class="pokemon-image-container">
+    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${(
+      index + 1
+    )
+      .toString()
+      .padStart(3, "0")}.png">
     </div>`);
     cardDetails.push(`<p class="pokemon-name">${name}</p>`);
-    cardDetails.push(`<table class="pokemon-details">`);
-    cardDetails.push(`<tr class="pokemon-property">`);
-    cardDetails.push(`<td class="pokemon-property-name">Types</td>`);
-    cardDetails.push(`<td class="pokemon-property-value">${types}</td>`);
-    cardDetails.push(`</tr>`);
-    cardDetails.push(`<tr class="pokemon-property">`);
-    cardDetails.push(`<td class="pokemon-property-name">Weight</td>`);
-    cardDetails.push(`<td class="pokemon-property-value">${weight}</td>`);
-    cardDetails.push(`</tr>`);
-    cardDetails.push(`<tr class="pokemon-property">`);
-    cardDetails.push(`<td class="pokemon-property-name">HP</td>`);
-    cardDetails.push(`<td class="pokemon-property-value">${hp}</td>`);
-    cardDetails.push(`</tr>`);
-    cardDetails.push(`<tr class="pokemon-property">`);
-    cardDetails.push(`<td class="pokemon-property-name">XP</td>`);
-    cardDetails.push(`<td class="pokemon-property-value">${xp}</td>`);
-    cardDetails.push(`</tr>`);
-    cardDetails.push(`<tr class="pokemon-property">`);
-    cardDetails.push(`<td class="pokemon-property-name">Attack</td>`);
-    cardDetails.push(`<td class="pokemon-property-value">${attack}</td>`);
-    cardDetails.push(`</tr>`);
-    cardDetails.push(`<tr class="pokemon-property">`);
-    cardDetails.push(`<td class="pokemon-property-name">Defense</td>`);
-    cardDetails.push(`<td class="pokemon-property-value">${defense}</td>`);
-    cardDetails.push(`</tr>`);
-    cardDetails.push(`</table>`);
+    cardDetails.push(`<div class="pokemon-details">`);
+    cardDetails.push(`<div class="pokemon-property">`);
+    cardDetails.push(`<div class="pokemon-property-name">Types</div>`);
+    cardDetails.push(`<div class="pokemon-property-value">${types}</div>`);
     cardDetails.push(`</div>`);
-    if ((index + 1) % 4 === 0) {
-      cardDetails.push(`</div>\n<div class="pokedex-row">`);
-    }
+    cardDetails.push(`<div class="pokemon-property">`);
+    cardDetails.push(`<div class="pokemon-property-name">Weight</div>`);
+    cardDetails.push(`<div class="pokemon-property-value">${weight}</div>`);
+    cardDetails.push(`</div>`);
+    cardDetails.push(`<div class="pokemon-property">`);
+    cardDetails.push(`<div class="pokemon-property-name">HP</div>`);
+    cardDetails.push(`<div class="pokemon-property-value">${hp}</div>`);
+    cardDetails.push(`</div>`);
+    cardDetails.push(`<div class="pokemon-property">`);
+    cardDetails.push(`<div class="pokemon-property-name">XP</div>`);
+    cardDetails.push(`<div class="pokemon-property-value">${xp}</div>`);
+    cardDetails.push(`</div>`);
+    cardDetails.push(`<div class="pokemon-property">`);
+    cardDetails.push(`<div class="pokemon-property-name">Attack</div>`);
+    cardDetails.push(`<div class="pokemon-property-value">${attack}</div>`);
+    cardDetails.push(`</div>`);
+    cardDetails.push(`<div class="pokemon-property">`);
+    cardDetails.push(`<div class="pokemon-property-name">Defense</div>`);
+    cardDetails.push(`<div class="pokemon-property-value">${defense}</div>`);
+    cardDetails.push(`</div>`);
+    cardDetails.push(`</div>`);
+    cardDetails.push(`</div>`);
     return cardDetails.join("\n");
   })
   .join("\n")}
-</div>
-</section>`;
+  `;
 
 console.log(html);

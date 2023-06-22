@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222a34;
+  font-family: "Flexo", sans-serif;
+  font-size: 20px;
+}
+
+.page-header {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+#pokedex-logo {
+  width: 30%;
+  opacity: 80%;
+}
+
+.pokedex {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2em;
+  justify-content: center;
+  padding: 1em;
+}
+
+.pokemon-card {
+  width: fit-content;
+  padding: 1em;
+  background-color: #a4d4e3;
+  border-radius: 2%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.pokemon-card:hover {
+  cursor: pointer;
+}
+
+.pokemon-image-container {
+  background-color: #d2e9f0;
+  width: fit-content;
+  aspect-ratio: 1;
+  margin: 0em auto;
+  border-radius: 2%;
+}
+
+.pokemon-name {
+  margin: 0.5em auto;
+  font-size: 1em;
+  text-align: center;
+}
+
+.pokemon-details {
+  font-size: 0.65em;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5em;
+}
+
+.pokemon-property {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pokemon-property-value {
+  color: #4b4b4b;
+}
+
+.pokemon-property-value > span {
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  margin: 0.1em;
+  border-radius: 0.3em;
+  color: #ffffff;
+}
+
+.fire {
+  background-color: #fc7014;
+}
+
+.fairy {
+  background-color: #fdb1e6;
+}
+
+.grass {
+  background-color: #8ec340;
+}
+
+.poison {
+  background-color: #b172c3;
+}
+
+.flying {
+  background-color: #2dc0ec;
+}
+
+.water {
+  background-color: #3686bd;
+}
+
+.bug {
+  background-color: #64952f;
+}
+
+.ghost {
+  background-color: #fd7014;
+}
+
+.normal {
+  background-color: #9aa3a6;
+}
+
+.electric {
+  background-color: #ecd025;
+}
+
+.ground {
+  background-color: #a28d32;
+}
+
+.fighting {
+  background-color: #d05913;
+}
+
+.psychic {
+  background-color: #f158b1;
+}
+
+.rock {
+  background-color: #79660e;
+}
+
+.steel {
+  background-color: #94afb0;
+}
+
+.ice {
+  background-color: #42bde4;
+}
+
+.dragon {
+  background-color: #ef6048;
+}
+
+.dark {
+  background-color: #626262;
+}
