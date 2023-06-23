@@ -26,8 +26,8 @@ body {
 
 #pokedex-logo {
   width: 30%;
-  opacity: 80%;
   padding: 1em;
+  mix-blend-mode: exclusion;
 }
 
 .pokedex {
@@ -41,7 +41,7 @@ body {
 }
 
 .pokemon-card {
-  color: #27424bac;
+  color: #ecf9fea3;
   text-shadow: var(--glow);
   width: fit-content;
   padding: 0.8em;
@@ -134,7 +134,7 @@ body {
 }
 
 .pokemon-property-value {
-  color: #00000084;
+  color: #a7cfdea3;
 }
 
 .pokemon-property-value > span {
@@ -142,7 +142,7 @@ body {
   margin: 0.1em;
   border-radius: 0.3em;
   color: #ffffffbe;
-  text-shadow: 1px 1px 1px #222a346b;
+  text-shadow: 1px 1px 1px #7187a26b;
 }
 
 .fire {
